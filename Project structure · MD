@@ -1,0 +1,71 @@
+# Smart Attendance System — Project Structure
+
+```
+Smart_Attendance_System/
+│
+├── 📄 main.py                    # Entry point — splash screen → auth → dashboard
+├── 📄 run.bat                    # Double-click to launch (use this, not VS Code terminal)
+├── 📄 requirements.txt           # All pip packages needed
+│
+├── ── CORE ──
+├── 📄 auth.py                    # Sign in / Sign up window
+├── 📄 main_dashboard.py          # Main dashboard with 4 cards
+├── 📄 database.py                # SQLite database — all CRUD operations
+│
+├── ── PAGES ──
+├── 📄 register_student.py        # Register new student (face + fingerprint)
+├── 📄 registered_students.py     # View / manage / delete students
+├── 📄 attendance_teacher.py      # Door attendance (face + fingerprint)
+├── 📄 teacher_dashboard.py       # Class setup — semester / subject / time
+├── 📄 report.py                  # Monthly attendance report + Excel export
+├── 📄 settings.py                # Settings panel (account, theme, etc.)
+│
+├── ── UTILITIES ──
+├── 📄 gradient.py                # GradientFrame + GradientButton widgets
+├── 📄 fonts.py                   # Font setup (Inter, Roboto)
+├── 📄 theme.py                   # 5 color themes (Steel Blue, Coffee, etc.)
+├── 📄 fp_session.py              # Windows Hello session manager
+├── 📄 zk_finger.py               # ZKTeco USB scanner integration
+│
+├── ── CONFIG ──
+├── 📄 app_settings.json          # Saved settings (theme, camera, time format)
+├── 📄 smart_attendance.db        # SQLite database file (auto-created)
+│
+├── ── ASSETS ──
+├── 📄 favicon.png                # App icon (teal shield logo)
+├── 📄 14722.jpg                  # Auth page background image
+├── 📄 tb.jpg                     # Dashboard / pages background image
+│
+└── ── VENV ──
+    └── .venv/                    # Python virtual environment
+```
+
+## Files to KEEP (production):
+| File | Purpose |
+|------|---------|
+| main.py | Start here |
+| run.bat | Launch script |
+| auth.py | Login |
+| main_dashboard.py | Home |
+| database.py | Data |
+| register_student.py | Register |
+| registered_students.py | View students |
+| attendance_teacher.py | Attendance |
+| teacher_dashboard.py | Class setup |
+| report.py | Reports |
+| settings.py | Settings |
+| gradient.py | UI widgets |
+| fonts.py | Fonts |
+| theme.py | Themes |
+| fp_session.py | Fingerprint session |
+| zk_finger.py | ZKTeco scanner |
+| app_settings.json | Config |
+
+## Files to DELETE (not needed):
+| File | Reason |
+|------|--------|
+| attendance.py | Replaced by attendance_teacher.py |
+| register_student_FINAL.py | Duplicate — rename to register_student.py |
+| debug_db.py | Debug only |
+| test_logos.py | Test only |
+| test_winhello.py | Test only |

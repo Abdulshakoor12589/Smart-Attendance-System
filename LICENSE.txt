@@ -1,0 +1,14 @@
+SMART ATTENDANCE SYSTEM - End User License Agreement
+
+Copyright (c) 2026 - Your Institution. All rights reserved.
+
+By installing this software you agree to these terms:
+
+1. This software is for use within your institution only.
+2. All student data is stored locally on your computer.
+3. No data is sent to external servers.
+4. Students must consent to face recognition before registration.
+5. The institution is responsible for protecting student data.
+6. This software is provided as-is without warranty.
+
+Click I Agree to accept these terms and install the software.

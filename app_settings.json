@@ -1,0 +1,9 @@
+{
+  "camera_index": 0,
+  "face_tolerance": 0.5,
+  "admin_name": "",
+  "time_format": "24h",
+  "fp_device": "usb_1",
+  "fp_prompt": "Please verify your identity",
+  "theme": "Graphite"
+}
